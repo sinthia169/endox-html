@@ -1,0 +1,11 @@
+@use '../../utiles' as *;
+
+.fs-100{
+    font-size: 100px;
+    @media #{$xl} {
+        font-size: 75px;
+    }
+}
+.tp-form-title{
+    font-size: 30px;
+}

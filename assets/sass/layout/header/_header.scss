@@ -1,0 +1,173 @@
+@use '../../utiles' as *;
+ 
+.tp-transparent-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding-left: 85px;
+    z-index: 99;
+}
+.tp-header-area{
+    @media #{$xl} {
+        padding-left: 26px;
+    }
+    @media #{$lg,$md} {
+        padding-left: 20px;
+    }
+}
+.tp-main-menu{
+    padding-left: 40px;
+    @media #{$xl} {
+        padding-left: 30px;
+    }
+    & ul{
+        & li{
+            display:inline-block;
+            position: relative;
+            & a{
+                color: #fff;
+                font-size: 18px;
+                display: inline-block;
+                font-family: var(--tp-font-heading);
+                padding: 37px 0;
+                margin-right: 42px;
+                position: relative;
+                @media #{$xxl} {
+                    margin-right: 26px;
+                }
+                @media #{$xl} {
+                    margin-right: 20px;
+                }
+                &::before{
+                    content: "\f118";
+                    position: absolute;
+                    font-family: var(--tp-fonts-flaticon);
+                    font-size: 40px;
+                    top: 0;
+                    left: 15px;
+                    transform: rotate(115deg);
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+            }
+            & .sub-menu{
+                position: absolute;
+                top: 105%;
+                left: 0;
+                width: 215px;
+                background-color:#fff;
+                padding: 15px 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                & li{
+                    display: block;
+                    margin: 0;
+                    transition: 0.3s;
+                    & a{
+                        color: #333;
+                        display: block;
+                        padding: 5px 30px;
+                        &::before{
+                            display: none;
+                        }
+                    }
+                    & .sub-menu{
+                        left: 100%;
+                        top: 105%;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    &:hover{
+                        & > a{
+                            color: var(--tp-theme-color);
+                        }
+                        & > .sub-menu{
+                            opacity: 1;
+                            visibility: visible;
+                            top:0;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                & a{
+                    color: var(--tp-theme-sec-color);
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+                & .sub-menu{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                }
+            }
+        }
+    }
+}
+
+.tp-header{
+    &-border{
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    &-search{
+        margin-right: 40px;
+        @media #{$xl} {
+            margin-right: 20px;
+        }
+        & i {
+            font-size: 30px;
+            color: #B1B4BA;
+        }
+    }
+    &-menu{
+        & button{
+            background: #23252D;
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            & i {
+                color: #fff;
+                font-size: 60px;
+            }
+        }
+    }
+    &-cta{
+        display: flex;
+        align-items: center;
+        padding: 26px 44px;
+        border-left: 1px solid rgba(255,255,255,0.15);
+        @media #{$xl} {
+            padding: 26px 24px;
+        }
+        &-icone{
+            padding-right:15px;
+            & i{
+                color:var(--tp-theme-sec-color);
+                font-size: 33px;
+            }
+        }
+        &-text{
+            span {
+                color: #B1B4BA;
+                font-size: 15px;
+                display: inline-block;
+                margin-bottom: 7px;
+                line-height: 1;
+            }
+            h4 {
+                font-size: 18px;
+                color: #fff;
+                margin: 0;
+            }
+        }
+    }
+    &-btn{
+        display: flex;
+        align-items: center;
+    }
+}
+ 
+ 

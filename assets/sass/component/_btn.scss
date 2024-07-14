@@ -1,0 +1,62 @@
+@use '../utiles' as *;
+
+.tp-btn{
+    background-color: var(--tp-theme-color);
+    font-size: 18px;
+    font-family: var(--tp-font-heading);
+    padding: 16px 45px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.tp-btn-sec{
+    background-color: var(--tp-theme-sec-color);
+    font-size: 18px;
+    font-family: var(--tp-font-heading);
+    padding: 16px 45px;
+    display: inline-block;
+    border-radius: 5px;
+    &-lg{
+        padding: 22px 48px;
+    }
+}
+
+.tp-sv-btn {
+    background:var(--tp-rom-color);
+    padding: 6px 25px;
+    display: block;
+    font-size: 18px;
+    font-family: var(--tp-font-heading);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    & i{
+        transform: rotate(-45deg);
+    }
+}
+
+
+.tp-text-btn{
+    font-size: 18px;
+    color: #57595C;
+    font-family: var(--tp-font-heading);
+    display: flex;
+    align-items: center;
+    & i{
+        transform: rotate(-45deg);
+        margin-left: 8px;
+    }
+}
+
+.tp-circle-btn{
+    color: #FFF;
+    font-family: var(--tp-font-heading);
+    font-size: 60px;
+    opacity: 0.3;
+    border: 2px solid rgba(217, 217, 217, 0.3);
+    display: inline-block;
+    padding: 48px 75px;
+    border-radius: 100%;
+}

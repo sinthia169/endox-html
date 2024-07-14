@@ -1,0 +1,66 @@
+@use '../../utiles' as *;
+
+.tp-section-title-wrapper {
+    @media #{$xl} {
+        padding-left: 20px;
+    }
+    @media #{$lg,$md} {
+        padding-left: 0;
+    }
+}
+.tp-about-image{
+    & img{
+        border-radius: 20px;
+    }
+}
+.pl-112{
+    @media #{$xl} {
+        padding-left: 20px;
+    }
+    @media #{$lg,$md} {
+        padding-left: 0;
+    } 
+}
+.tp-about-video{
+    &-icone{
+        height: 80px;
+        width: 80px;
+        border: 1px solid #57595C;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 75px;
+        display: inline-block;
+    }
+    & h4{
+        font-size: 30px;
+        color: #57595C;
+        margin: 0;
+    }
+}
+.tp-about-contant{
+    & ul{
+        & li{
+            list-style: none;
+            margin-bottom: 25px;
+            & i{
+                color: #000;
+                font-size: 30px;
+                margin-right: 10px;
+            }
+            & span{
+                color: #0A0E1A;
+                font-family:var(--tp-font-heading);
+                font-size: 30px; 
+                line-height:1.33;           
+            }
+        }
+    }   
+}
+.tp-about-circle-image{
+    position: absolute;
+    top: 0;
+    right: 185px;
+    & img{
+        max-width: inherit
+    }
+}

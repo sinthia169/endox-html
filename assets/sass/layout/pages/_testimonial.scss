@@ -1,0 +1,138 @@
+@use '../../utiles' as *;
+
+.tp-testimonial {
+    &-shape{
+        position: absolute;
+        top:65px;
+        left:0;
+        right:0;
+        z-index: -1;
+    }
+    &-desc{
+        font-size: 100px;
+        @media #{$xl} {
+            font-size: 75px;
+        }
+        @media #{$lg} {
+            font-size: 60px;
+        }
+    }
+    &-text{
+        color: #FFF;
+        font-size: 60px;
+    }
+    &-name{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    &-author{
+        margin-left: 30px;
+        & img{
+            border-radius: 20px;
+        }      
+        &-name{
+            font-size: 30px;
+            color: #FFF;
+        }
+        &-desig{
+            font-size: 17px;
+            color: #FFF;
+        }
+    }
+    &-img{
+        border-radius: 15px;
+    }
+    &-desig{
+        color: #57595C;
+        font-size: 17px;
+        margin-left: 78px;
+        & span{
+            width: 60px;
+            height: 1px;
+            background: #57595C;
+            transform: translateY(-3px);
+            margin-right: 5px;
+            display:inline-block;
+        }
+    }
+}
+
+.tp-swiper-test-button{
+    position: absolute;
+    left: -100px;
+    top: 32%;
+    z-index: 9;
+    font-size: 52px; 
+    @media #{$xxl,$xl} {
+        left: 0;
+        top: inherit;
+        bottom: 0;
+    }
+    @media #{$lg} {
+        left: 0;
+    }
+    &-next{
+        left: auto;
+        right: -100px;
+        @media #{$xxl,$xl} {
+            right: inherit;
+            left: 70px;
+        }
+        @media #{$lg} {
+            right: 0;
+        }
+    }
+    &-prev{
+        transform: rotate(180deg);
+    }
+}
+.tp-testimonial-shape{
+    @media #{$lg} {
+        top:0;
+    }
+}
+.tp-testimonial-shape-thumb { 
+    &-1{
+        left: 0;
+        top: 115px;
+        @media #{$xl} {
+            top: 50px;
+        }
+    }
+    &-2{
+        right: 0;
+        top: 34px;
+    }
+}
+.tp-testimonial-2-shape-thumb { 
+    &-2{
+        right: 19%;
+        bottom:3%;
+    }
+    &-1{
+        top: 14%;
+        right: 9%;
+    }
+}
+
+.tp-testimonial-slider-arrow-2{
+    position: absolute;
+    left: 500px;
+    bottom: 35px;
+    .tp-swiper-test-2-button {
+        color: #fff;
+        opacity: 0.5;
+        font-size: 52px;
+        z-index: 9;
+        display: inline-block;
+    }
+    & span{
+        height: 12px;
+        width: 12px;
+        background-color:#DBDBDB; 
+        opacity: 0.5;
+        display: inline-block;
+        border-radius: 100%;
+        margin: 0 5px;
+    }
+}

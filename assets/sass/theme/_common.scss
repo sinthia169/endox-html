@@ -1,0 +1,92 @@
+@use '../utiles' as *;
+
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+img{
+	max-width: 100%;
+}
+
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+}
+
+.z-index-11{
+	z-index: 11;
+}
+
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.overflow-x-visible{
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+
+.tp-black-bg{
+    background-color: var(--tp-common-black);
+}
+.tp-blue-bg{
+	background-color: var(--tp-theme-color);
+}
+.tp-yollow-bg{
+	background-color: var(--tp-theme-sec-color);
+}
+.tp-cream-bg{
+    background-color: var(--tp-rom-color);
+}
+.tp-neviblue-bg{
+    background-color: var(--tp-nevi-blue-color);
+}
+.tp-theme-black-bg{
+	background-color: #0a0e1a;
+}
+.br{
+	border-radius: 20px;
+}
+.slide-transtion {
+    -webkit-transition-timing-function: linear!important; 
+    transition-timing-function: linear!important;
+}
+.bg-pos-end{
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.br-20{
+	border-radius: 20px;
+}
+.br-15{
+	border-radius: 15px;
+}
+.tp-rot-180{
+	transform: rotate(180deg);
+}
+
+.bg-position{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}

@@ -1,0 +1,58 @@
+@use '../../utiles' as *;
+
+.tpblog{
+    &__thumb{
+        & img{
+            border-radius:20px;
+        }
+    }
+    &__meta{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        & span{
+            color: #57595C;
+            font-size: 17px;
+            & i{
+                margin-right: 5px;
+            }
+        }
+        & cite{
+            width: 2px;
+            height: 16px;
+            background: #57595C;
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 1.25;
+    }
+    &-2{
+        border: 1px solid #57595C;
+        border-radius: 20px;
+        & .tpblog__thumb{
+            flex: 0 0 auto;
+            width: 200px;
+            transform: translateY(-12px);
+            margin-left: -3px; 
+            left: 0;
+            top: 0;
+            & img{
+                height:calc(100% + 24px);
+                object-fit: cover;
+            }
+        }
+    }
+    & .tpblog__content {
+        padding-left: 70px;
+        padding-top: 30px;
+        @media #{$xl} {
+            padding-left: 30px;
+        }
+        @media #{$lg} {
+            padding-left: 20px;
+        }
+    }
+}
