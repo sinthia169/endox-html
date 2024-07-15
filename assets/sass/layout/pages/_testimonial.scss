@@ -16,6 +16,9 @@
         @media #{$lg} {
             font-size: 60px;
         }
+        @media #{$md} {
+            font-size: 50px;
+        }
     }
     &-text{
         color: #FFF;
@@ -63,7 +66,7 @@
     top: 32%;
     z-index: 9;
     font-size: 52px; 
-    @media #{$xxl,$xl} {
+    @media #{$xxl,$xl,$md} {
         left: 0;
         top: inherit;
         bottom: 0;
@@ -74,7 +77,7 @@
     &-next{
         left: auto;
         right: -100px;
-        @media #{$xxl,$xl} {
+        @media #{$xxl,$xl,$md} {
             right: inherit;
             left: 70px;
         }
@@ -87,7 +90,7 @@
     }
 }
 .tp-testimonial-shape{
-    @media #{$lg} {
+    @media #{$lg,$md} {
         top:0;
     }
 }

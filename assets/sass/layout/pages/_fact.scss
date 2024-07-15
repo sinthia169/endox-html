@@ -3,6 +3,7 @@
 .costom-row{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .tpfact{
     &__icone{
@@ -44,5 +45,9 @@
             }
         }
     }
-  
+}
+.cols{
+    @media #{$md} {
+        width: 50%;
+    }
 }
