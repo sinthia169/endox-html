@@ -8,9 +8,26 @@
     @media #{$md} {
         font-size: 38px;
     }
+    @media #{$xs} {
+        font-size: 40px;
+    }
+    & br{
+        @media #{$xs} {
+            display: none;
+        }
+    }
     &-white{
         color: #fff;
-    }   
+    } 
+    &-wrapper{
+        & P{
+            & br{
+                @media #{$xs} {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 .tp-subtitle{
     color: #57595C;

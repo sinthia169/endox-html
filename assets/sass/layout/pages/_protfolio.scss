@@ -7,9 +7,20 @@
     @media #{$md} {
         padding-right: 30px;
     }
+    @media #{$xs} {
+        padding-right: 15px;
+    }
+}
+.pl-30{
+    padding-left: 15px;
 }
 .tp-project{
     &-tab{
+        @media #{$md,$xs} {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
         & button{
             color:#fff;
             font-family: Federo;
@@ -34,9 +45,16 @@
                 width: 100%;
             }
             @media #{$md} {
-                font-size: 90px;
-                padding: 20px 30px;
-                width: 100%;
+                font-size: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-bottom: 20px;
+            }
+            @media #{$xs} {
+                font-size: 18px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-bottom: 12px;
             }
             &.active{
                 color: var(--tp-theme-sec-color);

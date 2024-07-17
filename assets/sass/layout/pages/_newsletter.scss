@@ -10,7 +10,10 @@
         @media #{$md} {
             padding-left: 40px;
             padding-right: 40px;
-        }        
+        }   
+        @media #{$xs} {
+            padding: 60px 20px;
+        }     
     }
     &-box{
         @media #{$lg} {
@@ -19,7 +22,10 @@
         & form{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;       
+            justify-content: space-between; 
+            @media #{$xs} {
+                display: block;
+            }      
         }
         & input.email {
             color: #fff;
@@ -55,6 +61,10 @@
 .tp-newsletter-input {
     width: calc(100% - 210px); 
     position: relative;
+    @media #{$xs} {
+         width: 100%;
+         margin-bottom: 15px;
+    }  
 }
 
 .tp-newsletter-image {

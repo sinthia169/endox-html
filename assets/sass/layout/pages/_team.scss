@@ -13,6 +13,13 @@
         padding-left: 25px;
         padding-right: 25px;
     }
+    @media #{$xs} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.tp-team-nav{
+    margin-bottom: 20px;
 }
 .tpteam{
     &__thurm{
@@ -52,6 +59,9 @@
         }
         @media #{$lg} {
             margin-left: 40px;
+        }
+        @media #{$xs} {
+            margin-left: 20px;
         }
         & span{
             font-size: 17px;

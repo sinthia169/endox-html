@@ -4,11 +4,17 @@
     @media #{$xl} {
         padding-left: 20px;
     }
-    @media #{$lg,$md} {
+    @media #{$lg,$md,$xs} {
         padding-left: 0;
     }
 }
 .tp-about-image{
+    @media #{$xs} {
+        margin-bottom: 20px;
+    }
+    @media #{$xs} {
+        padding-left: 0;
+    }
     & img{
         border-radius: 20px;
     }
@@ -17,7 +23,7 @@
     @media #{$xl} {
         padding-left: 20px;
     }
-    @media #{$lg,$md} {
+    @media #{$lg,$md,$xs} {
         padding-left: 0;
     } 
 }

@@ -80,6 +80,9 @@
         '768': {
           slidesPerView: 2,
         },
+        '0': {
+          slidesPerView: 1,
+        },
         a11y: false,
       },
     });

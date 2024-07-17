@@ -20,12 +20,12 @@
         <div class="tp-header-area tp-transparent-header tp-header-border"> 
             <div class="container-fluid p-0">
                 <div class="row gx-0 align-items-center">
-                    <div class="col-xl-2 col-lg-5 col-md-4">
+                    <div class="col-xl-2 col-lg-5 col-md-4 col-6">
                         <div class="tp-logo">
                             <a href="index.html"><img src="assets/image/logo/whitw logo.svg" alt="logo"></a>
                         </div>
                     </div>
-                    <div class="col-xl-10 col-lg-7 col-md-8">
+                    <div class="col-xl-10 col-lg-7 col-md-8 col-6">
                         <div class="tp-header-box d-flex justify-content-xl-between justify-content-end">
                             <div class="tp-main-menu d-none d-xl-block">
                                 <nav>
@@ -57,10 +57,10 @@
                                 </nav>
                             </div>
                             <div class="tp-header-right d-flex justify-content-end flex-wrap align-items-center">
-                                <div class="tp-header-search">
+                                <div class="tp-header-search d-none d-md-flex">
                                     <button class="d-flex align-items-center"><i class="flaticon-search"></i></button>
                                 </div>
-                                <div class="tp-header-cta">
+                                <div class="tp-header-cta d-none d-md-flex">
                                     <div class="tp-header-cta-icone d-flex align-items-center">
                                         <i class="flaticon-phone-book"></i>
                                     </div>
@@ -85,13 +85,13 @@
 
     <main>
         <!--hero area start-->
-        <section class="tp-hero-area tp-black-bg pt-265 pb p-relative" style="background-image: url(assets/image/shape/hero-1\ bg\ .png);">
+        <section class="tp-hero-area tp-hero-space tp-black-bg pt-265 pb p-relative" style="background-image: url(assets/image/shape/hero-1\ bg\ .png);">
             <div class="tp-hero-shape">
                 <img class="tp-hero-shape-1 p-absolute" src="assets/image/shape/hero-1 ball 2.png" alt="">
                 <img class="tp-hero-shape-2 p-absolute d-none d-xl-block" src="assets/image/shape/hero-1 shape 3.png" alt="">
                 <img class="tp-hero-shape-3 p-absolute" src="assets/image/shape/hero-1 ball .png " alt="">
-                <img class="tp-hero-shape-4 p-absolute" src="assets/image/shape/hero-1 shape 1.png" alt="">
-                <img class="tp-hero-shape-5 p-absolute" src="assets/image/shape/hero-1 shape 2.png" alt="">
+                <img class="tp-hero-shape-4 p-absolute d-none d-md-block" src="assets/image/shape/hero-1 shape 1.png" alt="">
+                <img class="tp-hero-shape-5 p-absolute d-none d-md-block" src="assets/image/shape/hero-1 shape 2.png" alt="">
             </div>
             <div class="hero-info d-none d-xxl-block">
                 <div class="hero-social">
@@ -116,14 +116,14 @@
         <!--hero area end-->
 
         <!--about area start-->
-        <section class="tp-about-area p-relative pt-146 pb-135" style="background-image: url(assets/image/about/about\ bg.jpg);">
+        <section class="tp-about-area fix p-relative pt-146 pb-135" style="background-image: url(assets/image/about/about\ bg.jpg);">
             <div class="tp-about-shape">
-                <img class="tp-about-shape-1 p-absolute" src="assets/image/shape/about star-1.png" alt="">
+                <img class="tp-about-shape-1 p-absolute d-none d-md-block" src="assets/image/shape/about star-1.png" alt="">
                 <img class="tp-about-shape-2 p-absolute" src="assets/image/shape/about star-2.png" alt="">
                 <img class="tp-about-shape-3 p-absolute" src="assets/image/shape/about star-3.png" alt="">
             </div>
             <div class="container p-relative z-index-11">
-                <div class="row">
+                <div class="row flex-column-reverse flex-md-row">
                     <div class="col-md-6">  
                         <div class="tp-about-image mb-100 ">
                             <img src="assets/image/about/about h-1.jpg" alt="image">
@@ -169,7 +169,7 @@
                         </div>
                         <div class="col-xl-8">
                             <div class="tp-newsletter-box p-relative">
-                                <h2 class="tp-newsletter-back ">Newsletter</h2>
+                                <h2 class="tp-newsletter-back d-none d-md-block">Newsletter</h2>
                                 <form action="#">
                                     <div class="tp-newsletter-input p-relative ">
                                         <input class="email" type="email" placeholder="Email hare*">
@@ -578,7 +578,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="tp-team-nav text-end d-flex justify-content-end align-items-center">
+                        <div class="tp-team-nav text-end d-flex justify-content-start justify-content-md-end align-items-center">
                             <div class="tp-swiper-team-button-prev tp-swiper-team-button tp-rot-180"><i class="flaticon-right-arrow"></i></div> 
                             <span></span>
                             <div class="tp-swiper-team-button-next tp-swiper-team-button"><i class="flaticon-right-arrow"></i></div>
@@ -779,7 +779,7 @@
             <div class="container">
                 <div class="costom-row">
                     <div class="cols">
-                        <div class="tpfact text-center text-lg-left mb-30">
+                        <div class="tpfact text-center text-lg-start mb-30">
                             <div class="tpfact__icone">
                                 <span><i class="flaticon-merging"></i></span>
                             </div>
@@ -791,7 +791,7 @@
                     </div>
 
                     <div class="cols">
-                        <div class="tpfact text-center text-lg-left mb-30">
+                        <div class="tpfact text-center text-lg-start mb-30">
                             <div class="tpfact__icone">
                                 <span><i class="flaticon-merging"></i></span>
                             </div>
@@ -803,7 +803,7 @@
                     </div>
 
                     <div class="cols">
-                        <div class="tpfact text-center text-lg-left mb-30">
+                        <div class="tpfact text-center text-lg-start mb-30">
                             <div class="tpfact__icone">
                                 <span><i class="flaticon-merging"></i></span>
                             </div>
@@ -815,7 +815,7 @@
                     </div>
 
                     <div class="cols">
-                        <div class="tpfact text-center text-lg-left mb-30">
+                        <div class="tpfact text-center text-lg-start mb-30">
                             <div class="tpfact__icone">
                                 <span><i class="flaticon-merging"></i></span>
                             </div>

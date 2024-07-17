@@ -77,6 +77,11 @@
   padding: 48px 75px;
   border-radius: 100%;
 }
+@media (max-width: 575px) {
+  .tp-circle-btn {
+    font-size: 40px;
+  }
+}
 
 .tp-section-title {
   font-size: 60px;
@@ -91,8 +96,23 @@
     font-size: 38px;
   }
 }
+@media (max-width: 575px) {
+  .tp-section-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .tp-section-title br {
+    display: none;
+  }
+}
 .tp-section-title-white {
   color: #fff;
+}
+@media (max-width: 575px) {
+  .tp-section-title-wrapper P br {
+    display: none;
+  }
 }
 
 .tp-subtitle {
@@ -4690,6 +4710,11 @@ textarea {
     padding-left: 20px;
   }
 }
+@media (max-width: 575px) {
+  .tp-header-area {
+    padding-left: 15px;
+  }
+}
 
 .tp-main-menu {
   padding-left: 40px;
@@ -4848,12 +4873,22 @@ textarea {
     padding-left: 20px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
   .tp-section-title-wrapper {
     padding-left: 0;
   }
 }
 
+@media (max-width: 575px) {
+  .tp-about-image {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .tp-about-image {
+    padding-left: 0;
+  }
+}
 .tp-about-image img {
   border-radius: 20px;
 }
@@ -4863,7 +4898,7 @@ textarea {
     padding-left: 20px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
   .pl-112 {
     padding-left: 0;
   }
@@ -4993,6 +5028,12 @@ textarea {
     padding-left: 90px;
   }
 }
+@media (max-width: 575px) {
+  .tp-hero-space {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+}
 .tp-hero-title {
   color: #FFF;
   text-transform: uppercase;
@@ -5014,6 +5055,11 @@ textarea {
     font-size: 65px;
   }
 }
+@media (max-width: 575px) {
+  .tp-hero-title {
+    font-size: 45px;
+  }
+}
 .tp-hero-title span {
   background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3C7FFF 100%);
   background-clip: text;
@@ -5027,6 +5073,11 @@ textarea {
   font-style: normal;
   display: inline-block;
   transform: translateY(-5px);
+}
+@media (max-width: 575px) {
+  .tp-hero-title i {
+    font-size: 18px;
+  }
 }
 .tp-hero-title-2 {
   font-size: 100px;
@@ -5140,6 +5191,11 @@ textarea {
     padding-right: 40px;
   }
 }
+@media (max-width: 575px) {
+  .tp-newsletter-bg {
+    padding: 60px 20px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-newsletter-box {
     margin-top: 25px;
@@ -5149,6 +5205,11 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 575px) {
+  .tp-newsletter-box form {
+    display: block;
+  }
 }
 .tp-newsletter-box input.email {
   color: #fff;
@@ -5185,6 +5246,12 @@ textarea {
 .tp-newsletter-input {
   width: calc(100% - 210px);
   position: relative;
+}
+@media (max-width: 575px) {
+  .tp-newsletter-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .tp-newsletter-image {
@@ -5256,7 +5323,23 @@ img.tp-about-shape-3 {
     padding-right: 30px;
   }
 }
+@media (max-width: 575px) {
+  .tp-project-tab-area {
+    padding-right: 15px;
+  }
+}
 
+.pl-30 {
+  padding-left: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
+  .tp-project-tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .tp-project-tab button {
   color: #fff;
   font-family: Federo;
@@ -5289,9 +5372,18 @@ img.tp-about-shape-3 {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-project-tab button {
-    font-size: 90px;
-    padding: 20px 30px;
-    width: 100%;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .tp-project-tab button {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 12px;
   }
 }
 .tp-project-tab button.active {
@@ -5406,6 +5498,16 @@ img.tp-about-shape-3 {
     padding-right: 25px;
   }
 }
+@media (max-width: 575px) {
+  .tp-team-area {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.tp-team-nav {
+  margin-bottom: 20px;
+}
 
 .tpteam__thurm {
   position: relative;
@@ -5448,6 +5550,11 @@ img.tp-about-shape-3 {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tpteam__info {
     margin-left: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .tpteam__info {
+    margin-left: 20px;
   }
 }
 .tpteam__info span {
@@ -5538,6 +5645,11 @@ img.tp-about-shape-3 {
     font-size: 50px;
   }
 }
+@media (max-width: 575px) {
+  .tp-testimonial-desc {
+    font-size: 35px;
+  }
+}
 .tp-testimonial-text {
   color: #FFF;
   font-size: 60px;
@@ -5584,7 +5696,7 @@ img.tp-about-shape-3 {
   z-index: 9;
   font-size: 52px;
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
   .tp-swiper-test-button {
     left: 0;
     top: inherit;
@@ -5596,11 +5708,18 @@ img.tp-about-shape-3 {
     left: 0;
   }
 }
+@media (max-width: 575px) {
+  .tp-swiper-test-button {
+    position: static;
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
 .tp-swiper-test-button-next {
   left: auto;
   right: -100px;
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
   .tp-swiper-test-button-next {
     right: inherit;
     left: 70px;
@@ -5615,7 +5734,7 @@ img.tp-about-shape-3 {
   transform: rotate(180deg);
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
   .tp-testimonial-shape {
     top: 0;
   }
