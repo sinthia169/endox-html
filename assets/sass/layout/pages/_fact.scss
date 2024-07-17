@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media #{$xs} {
+        justify-content: center;
+    }
 }
 .tpfact{
     &__icone{
@@ -47,7 +50,7 @@
     }
 }
 .cols{
-    @media #{$md} {
+    @media #{$md,$xs} {
         width: 50%;
     }
 }

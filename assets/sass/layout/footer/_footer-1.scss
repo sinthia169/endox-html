@@ -48,13 +48,13 @@
 .tp-footer-col{
     &-3{
         padding-left: 60px;
-        @media #{$md} {
+        @media #{$md,$xs} {
             padding-left: 0;
         }    
     }
     &-4{
         padding-left: 35px;  
-        @media #{$md} {
+        @media #{$md,$xs} {
             padding-left: 0;
         }     
     }
@@ -69,7 +69,7 @@
             opacity: 0.15;
             left: -40px;
             top: 0;
-            @media #{$md} {
+            @media #{$md,$xs} {
                 display: none;
             }    
         }
@@ -101,6 +101,10 @@
             padding-left: 33px;
             margin-left: 33px;
             position: relative;
+            @media #{$xs} {
+                margin-left: 10px;
+                padding-left: 10px;
+            }
             &::before{
                 content: "";
                 position: absolute;

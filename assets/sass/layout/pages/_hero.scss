@@ -82,6 +82,9 @@
     width: 256px;
     height: 276px;
     z-index: 1;
+    @media #{$xs} {
+        top: 200px;
+    }
 }
 
 .tp-hero-shape-2{

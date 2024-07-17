@@ -1,7 +1,7 @@
 @use '../../utiles' as *;
 
 .tpblog{
-    @media #{$md} {
+    @media #{$md,$xs} {
         padding-top: 20px;
     }
     &__thumb{
@@ -57,7 +57,7 @@
         @media #{$lg} {
             padding-left: 20px;
         }
-        @media #{$md} {
+        @media #{$md,$xs} {
             padding-left: 20px;
             padding-top: 0px;
         }
