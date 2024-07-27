@@ -55,6 +55,16 @@
         a11y: false,
       },
     });
+
+    $('.popup-image').magnificPopup({
+      type: 'image'
+      // other options
+    });
+    $(".video").magnificPopup({
+      type: "iframe",
+      
+    });
+
 // team slider
     var swiper = new Swiper(".tp-team-active", {
       slidesPerView: 4,
@@ -88,3 +98,4 @@
     });
 
 })(jQuery);
+

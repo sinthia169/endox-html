@@ -8,19 +8,83 @@
     display: inline-block;
     border-radius: 5px;
     color: #fff;
-}
-
-.tp-btn-sec{
-    background-color: var(--tp-theme-sec-color);
-    font-size: 18px;
-    font-family: var(--tp-font-heading);
-    padding: 16px 45px;
-    display: inline-block;
-    border-radius: 5px;
-    &-lg{
-        padding: 22px 48px;
+    position: relative;
+    overflow: hidden;
+    i{
+        height: 100%;
+        width: 22px;
+        background-color: #71A2FF;
+        position: absolute;
+        bottom: -2px;
+        transform: rotate(13deg);
+        right: -12px;
+        transition: 0.3s;
+    }
+    &:hover{
+        & .tp-btn-y-1{
+            transform: translateY(100%);
+        }
+        & .tp-btn-y-2{
+            transform: translateY(0);
+        }
+        & i{
+            right: -100%;
+        }
+        color:#fff ;
+    }
+    &-sec{
+        background-color: var(--tp-theme-sec-color);
+        font-size: 18px;
+        font-family: var(--tp-font-heading);
+        padding: 16px 45px;
+        display: inline-block;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        &-lg{
+            padding: 22px 48px;
+        }
+        i{
+            height: 100%;
+            width: 22px;
+            background-color: #E5CF00;
+            position: absolute;
+            bottom: -2px;
+            transform: rotate(13deg);
+            right: -12px;
+            transition: 0.3s;
+        }
+        &:hover{
+            & .tp-btn-y-1{
+                transform: translateY(100%);
+            }
+            & .tp-btn-y-2{
+                transform: translateY(0);
+            }
+            & i{
+                right: -100%;
+            }
+        }
+    }
+    &-wrap{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        & span{
+            display: block;
+            transition: 0.3s;
+        }
+    }
+    &-y-2{
+        position: absolute;
+        top: 0;          
+        left: 0;
+        width: 100%;
+        transform: translateY(100%);
     }
 }
+
+ 
 
 .tp-sv-btn {
     background:var(--tp-rom-color);
@@ -59,7 +123,14 @@
     display: inline-block;
     padding: 48px 75px;
     border-radius: 100%;
+    transition: 0.3s;
     @media #{$xs} {
         font-size: 40px;
+    }
+    &:hover{
+        background-color: var(--tp-theme-color);
+        color: #fff;
+        border-color:var(--tp-theme-color) ;
+        opacity: 1;
     }
 }
